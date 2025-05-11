@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BlueNova Bank – Variance Assistant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+  <link href="styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1 id="mainTitle">
+        <span class="bank-logo">
+          <!-- Simple, robust logo that works in all browsers -->
+          <div style="background-color: #2563EB; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+            <div style="color: white; font-weight: bold; font-size: 18px;">BN</div>
+          </div>
+        </span>
+        BlueNova Bank – Variance Assistant
+      </h1>
+      
+      <div class="language-switch">
+        <label class="slider lang-toggle" id="languageToggle">
+          <span class="lang-label">DE</span>
+        </label>
+      </div>
+    </div>
+    
+    <nav class="main-navigation">
+      <ul>
+        <li><a href="#home" class="nav-link active" data-page="homePage">Home</a></li>
+        <li><a href="#how-to" class="nav-link" data-page="howToPage">How It Works</a></li>
+        <li><a href="#testimonials" class="nav-link" data-page="testimonialsPage">Success Stories</a></li>
+        <li><a href="#tool" class="nav-link" data-page="toolPage">Variance Analysis Tool</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Page -->
+  <div id="homePage" class="page active">
+    <div class="container">
+      <div class="hero-section">
+        <div class="hero-content">
+          <h2>Streamline Your Variance Analysis Process</h2>
+          <p>The BlueNova Bank Variance Assistant helps credit officers automate financial analysis, reduce manual work and improve accuracy for faster credit decisions.</p>
+          <div class="cta-buttons">
+            <a href="#how-to" class="btn btn-secondary page-link" data-page="howToPage">Learn How It Works</a>
+            <a href="#tool" class="btn btn-primary page-link" data-page="toolPage">Start Analysis</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <!-- Placeholder for dashboard preview image -->
+          <div class="image-placeholder">
+            <div class="placeholder-text">Dashboard Preview</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="benefits-section">
+        <h2>Benefits for Credit Officers</h2>
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="benefit-icon">⏱️</div>
+            <h3>60% Time Reduction</h3>
+            <p>Automated variance analysis saves an average of 4 hours per credit application</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">📊</div>
+            <h3>Enhanced Risk Detection</h3>
+            <p>Identifies 30% more potential risk factors compared to manual methods</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">📋</div>
+            <h3>Basel III Compliant</h3>
+            <p>Documentation meets regulatory requirements for credit risk assessment</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="features-section">
+        <h2>Key Features</h2>
+        <div class="features-grid">
+          <div class="feature">
+            <div class="feature-icon">
+              <!-- Simple icon using HTML/CSS instead of SVG -->
+              <div class="icon-placeholder">
+                <span class="icon-text">📈</span>
+              </div>
+            </div>
+            <h3>Segment-Specific Analysis</h3>
+            <p>Tailored variance detection for Retail, Corporate, and Investment banking</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">
+              <div class="icon-placeholder">
+                <span class="icon-text">🔍</span>
+              </div>
+            </div>
+            <h3>Advanced KPI Monitoring</h3>
+            <p>Track LLP, NPL Ratios, RAROC, and other critical credit metrics</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">
+              <div class="icon-placeholder">
+                <span class="icon-text">📄</span>
+              </div>
+            </div>
+            <h3>Document Processing</h3>
+            <p>Automated extraction from financial statements and supporting documents</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">
+              <div class="icon-placeholder">
+                <span class="icon-text">📊</span>
+              </div>
+            </div>
+            <h3>Trend Analysis</h3>
+            <p>Visualize performance trends to identify emerging risks</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- How-To Page -->
+  <div id="howToPage" class="page">
+    <div class="container">
+      <h1>How to Use the Variance Assistant</h1>
+      
+      <div class="video-tutorial">
+        <div class="video-placeholder">
+          <div class="placeholder-text">Video Tutorial</div>
+          <div class="play-button">▶</div>
+        </div>
+      </div>
+      
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>Select Your Banking Segment</h3>
+            <p>Choose between Retail, Corporate, or Investment banking segments to focus your analysis on the most relevant metrics and benchmarks.</p>
+            <div class="screenshot-container">
+              <img src="images/segment-screenshot.png" alt="Segment Selection Screenshot" class="step-screenshot">
+            </div>
+          </div>
+        </div>
+        
+        <div class="process-step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>Choose Relevant KPIs</h3>
+            <p>Select the key performance indicators most relevant to your credit analysis. The system will automatically calibrate sensitivity based on your selections.</p>
+            <div class="screenshot-container">
+              <img src="images/kpi-screenshot.png" alt="KPI Selection Screenshot" class="step-screenshot">
+            </div>
+          </div>
+        </div>
+        
+        <div class="process-step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>Upload Financial Documents</h3>
+            <p>Upload balance sheets, income statements, and other financial documents. The system will automatically extract relevant data for analysis.</p>
+            <div class="screenshot-container">
+              <img src="images/upload-screenshot.png" alt="Document Upload Screenshot" class="step-screenshot">
+            </div>
+          </div>
+        </div>
+        
+        <div class="process-step">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h3>Review Variance Analysis</h3>
+            <p>Examine the automated variance analysis report. Red flags will highlight areas requiring additional attention, while trend indicators show direction and velocity of changes.</p>
+            <div class="screenshot-container">
+              <img src="images/results-screenshot.png" alt="Results Review Screenshot" class="step-screenshot">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        
+        <div class="faq-item">
+          <div class="faq-question">What financial document formats are supported?</div>
+          <div class="faq-answer">The system supports PDF, Excel (XLS, XLSX), and CSV formats. Documents can be up to 25MB in size.</div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">Can I export the analysis results?</div>
+          <div class="faq-answer">Yes, results can be exported in PDF, Excel, or integrated directly with your core banking system via API.</div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">Is the tool compliant with banking regulations?</div>
+          <div class="faq-answer">Yes, the Variance Assistant is fully compliant with Basel III requirements for credit risk assessment and meets GDPR data protection standards.</div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">How is sensitive financial data protected?</div>
+          <div class="faq-answer">All data is encrypted using bank-grade security protocols. Documents are processed in secure environments and can be automatically purged after analysis if required.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Testimonials Page -->
+  <div id="testimonialsPage" class="page">
+    <div class="container">
+      <h1>Success Stories</h1>
+      
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <div class="avatar">JS</div>
+            <div class="user-info">
+              <h3>Jakob Schmidt</h3>
+              <p>Senior Credit Analyst, Bavaria Regional Bank</p>
+            </div>
+          </div>
+          <div class="testimonial-content">
+            <p>"The Variance Assistant reduced our monthly portfolio review process from 3 days to just 4 hours. The automated variance detection has helped us identify risk trends we were previously missing."</p>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <div class="avatar">MK</div>
+            <div class="user-info">
+              <h3>Maria Krüger</h3>
+              <p>Head of Credit Risk, Frankfurt Commerce Bank</p>
+            </div>
+          </div>
+          <div class="testimonial-content">
+            <p>"Implementing the Variance Assistant has standardized our credit analysis process across all branches. Our risk detection accuracy has improved by 28% in just three months."</p>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <div class="avatar">TH</div>
+            <div class="user-info">
+              <h3>Thomas Hoffmann</h3>
+              <p>Director of Corporate Banking, Northern Credit Union</p>
+            </div>
+          </div>
+          <div class="testimonial-content">
+            <p>"Our credit committee now receives consistent, high-quality analysis reports for every application. The variance flagging system has dramatically improved our early warning capabilities."</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="stats-section">
+        <div class="stat-card">
+          <div class="stat-number">60%</div>
+          <div class="stat-label">Time Savings</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">28%</div>
+          <div class="stat-label">Improved Accuracy</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">94%</div>
+          <div class="stat-label">User Satisfaction</div>
+        </div>
+      </div>
+      
+      <div class="case-study-section">
+        <h2>Case Study: Regional Banking Group</h2>
+        <div class="case-study-content">
+          <div class="case-study-text">
+            <p>A mid-sized regional banking group with 25 branches implemented the Variance Assistant to standardize their credit analysis process across locations.</p>
+            <ul>
+              <li><strong>Challenge:</strong> Inconsistent analysis methodologies across branches</li>
+              <li><strong>Solution:</strong> Centralized variance analysis with standardized KPIs</li>
+              <li><strong>Result:</strong> 42% reduction in credit process time, 18% decrease in defaults</li>
+            </ul>
+            <a href="#" class="btn btn-outline">Read Full Case Study</a>
+          </div>
+          <div class="case-study-image">
+            <div class="placeholder-text">Case Study Graphic</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tool Page -->
+  <div id="toolPage" class="page">
+    <div class="container">
+      <div class="step-bar">
+        <div class="steps">
+          <div class="step active" data-tool-step="0">Segment</div>
+          <div class="step" data-tool-step="1">KPI</div>
+          <div class="step" data-tool-step="2">Upload</div>
+          <div class="step" data-tool-step="3">Ergebnis</div>
+        </div>
+      </div>
+
+      <div class="tool-content">
+        <section class="form-step active" id="step1">
+          <div class="form-box">
+            <h2>Select the segment</h2>
+            <div class="options three">
+              <div class="option" data-tooltip="Retail banking focuses on individual consumers and small businesses">Retail</div>
+              <div class="option" data-tooltip="Corporate banking serves medium to large business entities">Corporate</div>
+              <div class="option" data-tooltip="Investment banking deals with capital markets and securities">Investment</div>
+            </div>
+            <div id="step1ValidationMsg" class="validation-message"></div>
+            <div class="nav-buttons">
+              <span class="tooltip" id="step1Tooltip"></span>
+              <button id="step1Next" disabled>Next</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="form-step" id="step2">
+          <div class="form-box">
+            <h2>Select KPIs</h2>
+            <div id="kpiCount" class="kpi-counter">0 KPIs selected</div>
+            <div class="options three">
+              <div class="option" data-tooltip="Ifo Business Climate Index - Economic indicator for business confidence">Ifo</div>
+              <div class="option" data-tooltip="Purchasing Managers' Index - Economic indicator of manufacturing sector">PMI</div>
+            </div>
+            <div id="step2ValidationMsg" class="validation-message"></div>
+            <div class="nav-buttons">
+              <span class="tooltip" id="step2Tooltip"></span>
+              <button class="prev-step-button">Back</button>
+              <button id="step2Next" disabled>Next</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="form-step" id="step3">
+          <div class="form-box">
+            <h2> Upload documents (optional)</h2>
+            <div class="dropzone main-dropzone">
+              <div class="upload-icon">
+                <div class="icon-placeholder">
+                  <span class="icon-text">📤</span>
+                </div>
+              </div>
+              <p>Main documents (e.g. financial statements)</p>
+              <input multiple type="file"/>
+            </div>
+            <div class="dropzone secondary-dropzone">
+              <div class="upload-icon">
+                <div class="icon-placeholder">
+                  <span class="icon-text">📑</span>
+                </div>
+              </div>
+              <p>Additional document</p>
+              <input multiple type="file"/>
+            </div>
+            <textarea class="comment-box" placeholder="Enter comment…"></textarea>
+            <div class="nav-buttons">
+              <button class="prev-step-button">Back</button>
+              <button class="next-step-button">Next</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="form-step" id="step4">
+          <div class="form-box">
+            <h2>Result</h2>
+            <p>Your selection has been registered. The analysis is being performed.</p>                   
+            <div class="analysis-container">
+              <div class="analysis-placeholder">
+                <div class="placeholder-title">Variancen analysis</div>
+                <div class="chart-container">
+                  <div class="placeholder-text">Variance Analysis<br>Chart</div>
+                </div>
+              </div>
+              
+              <div class="analysis-placeholder">
+                <div class="placeholder-title">Trend analysis</div>
+                <div class="chart-container">
+                  <div class="placeholder-text">Trend Analysis<br>Chart</div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="analysis-explanation">
+              This area analysis shows the most important KPIs for the selected segment. The data is automatically extracted from the uploaded documents and compared with historical benchmarks.
+            </div>
+            
+            <button class="download-btn" id="downloadResultBtn">Download results</button>
+            <div class="nav-buttons">
+              <button class="prev-step-button">Back</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+  © 2025 BlueNova Bank · <a href="#">Legal Notice</a> · <a href="#">Privacy Policy</a> · <a href="#">Contact</a> · <a href="#">Accessibility</a>
+  </footer>
+  
+  <!-- Fix script for the Next button issue -->
+  <script>
+    // Global navigation function for tool steps
+    window.goToToolStep = function(stepNumber) {
+      console.log('Going to tool step:', stepNumber);
+      
+      // Hide all steps
+      document.querySelectorAll('.form-step').forEach(step => {
+        step.classList.remove('active');
+      });
+      
+      // Show the target step
+      const steps = document.querySelectorAll('.form-step');
+      if (steps.length > stepNumber) {
+        steps[stepNumber].classList.add('active');
+        
+        // Update step indicators
+        document.querySelectorAll('.step').forEach((indicator, index) => {
+          indicator.classList.toggle('active', index === stepNumber);
+        });
+      }
+    };
+
+    document.addEventListener('DOMContentLoaded', function() {
+      console.log('Fix script loaded');
+      
+      // Fix segment selection
+      const segmentOptions = document.querySelectorAll('#step1 .option');
+      if (segmentOptions.length > 0) {
+        console.log('Found segment options:', segmentOptions.length);
+        
+        segmentOptions.forEach(option => {
+          option.addEventListener('click', function() {
+            console.log('Segment clicked:', this.textContent);
+            
+            // Remove selected class from all options
+            segmentOptions.forEach(opt => opt.classList.remove('selected'));
+            
+            // Add selected class to clicked option
+            this.classList.add('selected');
+            
+            // Enable next button
+            const nextButton = document.getElementById('step1Next');
+            if (nextButton) {
+              nextButton.disabled = false;
+            }
+          });
+        });
+      }
+      
+      // Direct fix for next buttons
+      document.getElementById('step1Next').onclick = function() { 
+        window.goToToolStep(1); 
+        return false; 
+      };
+      
+      document.getElementById('step2Next').onclick = function() { 
+        window.goToToolStep(2); 
+        return false; 
+      };
+      
+      // For all next-step-button instances
+      document.querySelectorAll('.next-step-button').forEach(btn => {
+        btn.onclick = function() {
+          // Find current active step
+          const currentStep = document.querySelector('.form-step.active');
+          const allSteps = Array.from(document.querySelectorAll('.form-step'));
+          const currentIndex = allSteps.indexOf(currentStep);
+          
+          if (currentIndex !== -1 && currentIndex < allSteps.length - 1) {
+            window.goToToolStep(currentIndex + 1);
+          }
+          return false;
+        };
+      });
+      
+      // For all prev-step-button instances
+      document.querySelectorAll('.prev-step-button').forEach(btn => {
+        btn.onclick = function() {
+          // Find current active step
+          const currentStep = document.querySelector('.form-step.active');
+          const allSteps = Array.from(document.querySelectorAll('.form-step'));
+          const currentIndex = allSteps.indexOf(currentStep);
+          
+          if (currentIndex > 0) {
+            window.goToToolStep(currentIndex - 1);
+          }
+          return false;
+        };
+      });
+    });
+  </script>
+  <!-- Load regular script -->
+  <script src="script.js"></script>
+  <script src="api-integration.js"></script>
+</body>
+</html>
